@@ -1,13 +1,8 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Timetable Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A web-based timetable and academic scheduling management system built with **Laravel 12**, **PHP 8.2+**, and **MySQL**. Designed with a clean, high-contrast **minimalist purple theme** and modern typography to deliver a clutter-free experience for managing academic resources and schedules.
 
-## About Laravel
+---
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
@@ -19,41 +14,51 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - [Robust background job processing](https://laravel.com/docs/queues).
 - [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## Features
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+- **Authentication & User Management**:
+  - Secure registration and login powered by Laravel authentication.
+  - Extended user attributes: Full Name, Email, Password, Phone Number, Age, and Residential Address.
+  - Interactive password visibility toggle on authentication forms.
+  - Password reset and email confirmation flows.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **Student Records Management**:
+  - View full roster of registered students.
+  - Detailed student profile inspection (`show` view).
+  - Create, update, and delete student accounts.
 
-## Laravel Sponsors
+- **Course & Subject Management**:
+  - Manage course codes (e.g., `CSC520`), subject names, and assigned faculty lecturers.
+  - Full CRUD operations with detailed record inspection.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- **Class Group / Cohort Management**:
+  - Organize students into distinct cohorts/classes (e.g., `CS240-5B`) and semester parts.
+  - Full CRUD support with formatted status badges.
 
-### Premium Partners
+- **Lecture Hall & Venue Management**:
+  - Track classrooms, auditoriums, and laboratory spaces with building locations (e.g., `Block B, Level 2`).
+  - Full CRUD capabilities.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+- **Timetable Scheduling**:
+  - Coordinate class allocations across:
+    - **Day of the week**
+    - **Time slot** (`time_from` and `time_to`)
+    - **Subject & Lecturer**
+    - **Student Group / Cohort**
+    - **Lecture Hall / Venue**
+  - Master schedule overview table with unified action buttons (View, Edit, Delete).
+  - Detailed single-entry view with linked relationships.
 
-## Contributing
+- **Minimalist & Modern UI**:
+  - Clean purple aesthetic (`#6d28d9` / violet palette) combined with crisp slate neutrals (`#0f172a`, `#f8fafc`).
+  - Styled with **Inter** typography, micro-shadows, and 1px crisp borders.
+  - Fully responsive across desktop, tablet, and mobile displays.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## Project Credits
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- **Project**: Timetable Management System
+- **Framework**: Laravel 12 (PHP 8.2+)
